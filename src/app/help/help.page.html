@@ -1,0 +1,78 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title> Help </ion-title>
+    <ion-buttons  slot="end">
+      <ion-button (click)="closeModal()">
+        <ion-icon color="secondary" slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-slides #slides pager="true" [options]="slideOpts" (ionSlideDidChange)="ionSlideDidChange($event)"
+  (ionSlideReachEnd)="ionSlideReachEnd($event)">
+
+    <ion-slide class="img-1">
+      <ion-card class="myCard">
+        <img src="assets/img/appointment.png"/>
+      </ion-card>
+    </ion-slide>
+      
+    <ion-slide class="img-1">
+      <ion-card class="myCard">
+        <img src="assets/img/form.png"/>
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide class="img-1">
+      <ion-card class="myCard">
+        <img src="assets/img/cancel-btn.png"/>
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide class="img-1">
+      <ion-card class="myCard">
+        <img src="assets/img/history-cancel.png"/>
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide class="img-1">
+      <ion-card class="myCard">
+        <img src="assets/img/history-status.png"/>
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide class="img-1">
+      <ion-card class="myCard">
+        <img src="assets/img/health-assess.png"/>
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide class="img-1">
+      <ion-card class="myCard">
+        <img src="assets/img/settings.png"/>
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide class="img-1">
+      <ion-card class="myCard">
+        <img src="assets/img/account.png"/>
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide class="img-1">
+      <ion-card class="myCard">
+        <img src="assets/img/toast.png"/>
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide class="img-1">
+      <ion-card class="myCard">
+        <img src="assets/img/message-us.png"/>
+      </ion-card>
+    </ion-slide>
+
+  </ion-slides>
+
+</ion-content>

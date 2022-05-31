@@ -1,0 +1,83 @@
+<ion-header>
+  <div class="lil-heads">
+      <ion-buttons class="ion-button-class">
+          <ion-icon name="chevron-back" [routerLink]="['/login']" color="secondary"></ion-icon>
+            <ion-title>Register</ion-title>
+      </ion-buttons>      
+  </div>
+</ion-header>
+
+<ion-content>
+
+  <div class="centre">
+  
+    <ion-item lines="none">
+      <ion-label position="floating">Last name</ion-label>
+      <ion-input type="text" style="text-transform: capitalize;"[(ngModel)]="Lname" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-label position="floating">First name</ion-label>
+      <ion-input type="text"  style="text-transform: capitalize;" [(ngModel)]="Fname" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-label position="floating">Middle name</ion-label>
+      <ion-input type="text"  style="text-transform: capitalize;" [(ngModel)]="Mname" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="text"  [(ngModel)]="email_address" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-label position="floating">Sex</ion-label>
+      <ion-select interface="popover" [(ngModel)]="gender">
+        <ion-select-option value="M">Male</ion-select-option>
+        <ion-select-option value="F">Female</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-label position="stacked">Birthday</ion-label>
+      <ion-input type="date" [(ngModel)]="date_birth" required></ion-input>
+    </ion-item>
+    
+    <ion-item lines="none">
+      <ion-label position="stacked">Address</ion-label>
+      <ion-input placeholder="Street" [(ngModel)]="strt"></ion-input>
+      <ion-input placeholder="Barangay" [(ngModel)]="brgy"></ion-input>
+      <ion-input placeholder="City" [(ngModel)]="city"></ion-input>
+      <ion-input placeholder="Province" [(ngModel)]="province"></ion-input>
+    </ion-item>
+    
+    <ion-item lines="none">
+      <ion-label position="floating">Contact No.</ion-label>
+      <ion-input type="tel" [(ngModel)]="phone" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password" [(ngModel)]="password" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-label position="floating">Confirm Password</ion-label>
+      <ion-input type="password" [(ngModel)]="Confirm_password" required></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+          <ion-button expand="block" color="primary" (click)="tryRegister()" [disabled]="disabledButton">Register</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <div class="item item-checkbox">
+      <label class="checkbox" >
+        <input type="checkbox"> I Accept the Terms & Conditions
+      </label>
+    </div>
+</div>
+
+</ion-content>

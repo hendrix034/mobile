@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title> Feedback </ion-title>
+    <ion-buttons  slot="end">
+      <ion-button (click)="Close()">
+        <ion-icon slot="icon-only" name="close" color="secondary"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <div class="text">
+    <p>We would like to hear your feedback
+      to improve our service.</p>
+
+    <div class="textarea">
+      <ion-item lines="none">
+        <ion-textarea placeholder="Please leave your feedback here." rows="10" [(ngModel)]="message"></ion-textarea>
+      </ion-item>
+      
+      <ion-button  (click)="CloseModal()">
+        Submit
+      </ion-button>
+    </div>
+  </div>
+      
+  <div class="card">
+    <ion-card>
+      <ion-card-header class="card-header">
+          <ion-card-title>Contact Us!</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content class="card-content">
+        <ion-item lines="none">
+          <ion-icon name="logo-facebook"></ion-icon>
+          <ion-label position="block"> {{ FB }} </ion-label>
+        </ion-item>
+
+        <ion-item lines="none">
+          <ion-icon name="call"></ion-icon>
+          <ion-label position="block">{{ phone }}</ion-label>
+        </ion-item>
+
+        <ion-item lines="none">
+          <ion-icon name="mail"></ion-icon>
+          <ion-label position="block">{{ Email }}</ion-label>
+        </ion-item>
+
+        <ion-item lines="none">
+          <ion-icon name="globe-outline"></ion-icon>
+          <ion-label position="block">{{ website }}</ion-label>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+</ion-content>

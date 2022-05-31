@@ -1,0 +1,51 @@
+ion-title {
+    font-size: 20px;
+    --color: #ffffff;
+  }
+  
+  .text p {
+    margin: 0;
+    padding: 30px 20px 10px;
+    text-align: center;
+  }
+  
+  .textarea {
+    padding: 20px;
+  
+    ion-item {
+        --background: #e5e5e5 !important;
+        --border-radius: 15px !important;
+        padding-bottom: 15px;
+    }
+  
+    ion-button{
+        float: right;
+    }
+  }
+  
+  .card {
+    padding: 30px 15px 15px;
+  
+    ion-card {
+        --background: #e5e5e5;
+    }
+  
+    ion-item ion-label {
+        white-space: normal;
+    }
+  }
+  
+  ion-label {
+    --color: #000;
+    --padding-bottom: 8px;
+    --padding-top: 8px;
+    --padding-start: 15px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    padding-left: 15px !important;
+  }
+  
+  ion-toolbar {
+    --background: #c62929;
+    --color: #000000;
+    }

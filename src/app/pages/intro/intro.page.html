@@ -1,0 +1,28 @@
+<ion-header class="ion-no-border">
+  <div class="lil-heads">
+      <ion-title>Appointment</ion-title>    
+  </div>
+</ion-header>
+<ion-content>
+
+  <div class="ion-padding">
+    <ion-card class="card" *ngFor="let user of users">
+      <ion-card-header>
+        <ion-row class="ion-align-items-center">
+          Appointment Details:
+        </ion-row>
+      </ion-card-header>
+      <ion-item lines="none">Time: {{user.p_time}}</ion-item>
+      <ion-item lines="none">Date: {{user.p_date}}</ion-item>
+      <ion-item lines="none">Status:{{user.approval}}</ion-item>
+      <ion-item lines="none" class="cancel-btn" *ngIf="user.approval =='pending'"><ion-button color="primary"  (click)="cancel(user.req_id)">Cancel</ion-button></ion-item>
+    </ion-card>
+    <div class="btn">
+      <ion-button (click)="thisshow()" color="primary">
+        Set an appointment
+      </ion-button>
+    </div>
+  </div>
+  
+
+</ion-content>

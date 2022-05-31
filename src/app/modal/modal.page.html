@@ -1,0 +1,35 @@
+<ion-header>
+  <div class="lil-heads">
+    <ion-buttons class="ion-button-class">
+        <ion-icon color="secondary" name="chevron-back" (click)='dismiss()' ></ion-icon>
+          <ion-title>Change password</ion-title>
+    </ion-buttons>      
+</div>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="centre">
+    <ion-item lines="none">
+      <ion-label position="floating">Old Password</ion-label>
+      <ion-input type="password" [(ngModel)]="old_password" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-label position="floating">New Password</ion-label>
+      <ion-input type="password" [(ngModel)]="new_password" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-label position="floating">Confirm Password</ion-label>
+      <ion-input type="password" [(ngModel)]="confirm_password" required></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+         <ion-button expand="block" color="primary" (click)="changepassword()">update</ion-button>
+      </ion-col>
+    </ion-row>
+
+</div>
+
+</ion-content>

@@ -1,0 +1,70 @@
+.lil-heads{
+    background: #C62929;
+    padding: 15px;
+    text-align: center;
+}
+
+ion-title {
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.text {
+    background: none;
+    padding: 5px;
+    font-size: 20px;
+    margin: 20px;
+    display: absolute;
+    font-weight: bold;
+}
+
+.border {
+    display: block;
+    margin: auto;
+    width: 350px;
+    height: 2px;
+    background: #C0C0C0;                                                                                                        
+    margin-bottom: 18px;
+}
+
+.vmg-text p {
+    background: #e5e5e5;
+    padding: 28px;
+    margin: auto 42px;
+    border-radius: 18px;
+}
+
+.section-card {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto 42px;
+    background: none;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 280px;
+    grid-template-rows: 160px auto;
+    grid-template-areas: "image" "text";
+    
+    border-radius: 18px;
+    background: #e5e5e5;
+    // box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    font-family: roboto;
+    text-align: left;
+
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin: 15px auto;
+}
+
+.card-image1 {
+    grid-area: image;
+    background: url('/assets/img/3.jpg');
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}

@@ -1,0 +1,56 @@
+<ion-header>
+  <div class="lil-heads">
+    <ion-buttons class="ion-button-class">
+        <ion-icon color="secondary" name="chevron-back" [routerLink]="['/crud/settings']"></ion-icon>
+          <ion-title>Update Account</ion-title>
+    </ion-buttons>      
+</div>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="centre">
+    <div hidden="true">
+    <ion-item lines="none">
+      <ion-label position="floating">Last name</ion-label>
+      <ion-input type="text" style="text-transform: capitalize;"[(ngModel)]="Lname" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-label position="floating">First name</ion-label>
+      <ion-input type="text"  style="text-transform: capitalize;" [(ngModel)]="Fname" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-label position="floating">Middle name</ion-label>
+      <ion-input type="text"  style="text-transform: capitalize;" [(ngModel)]="Mname" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-label position="stacked">Birthday</ion-label>
+      <ion-input type="date" [(ngModel)]="date_birth" required></ion-input>
+    </ion-item>
+  </div>
+    <ion-item lines="none">
+      <ion-label position="stacked">Address</ion-label>
+      <ion-input placeholder="Street" [(ngModel)]="strt"></ion-input>
+      <ion-input placeholder="Barangay" [(ngModel)]="brgy"></ion-input>
+      <ion-input placeholder="City" [(ngModel)]="city"></ion-input>
+      <ion-input placeholder="Province" [(ngModel)]="province"></ion-input>
+    </ion-item>
+    
+    <ion-item lines="none">
+      <ion-label position="floating">Contact No.</ion-label>
+      <ion-input type="tel" [(ngModel)]="phone" required></ion-input>
+    </ion-item>
+    <ion-col>
+      <ion-button expand="block" class="ion-padding" color="primary" (click)="showmodal()" >Change password</ion-button>
+
+      <ion-button expand="block" class="ion-padding" color="primary" (click)="updateProfile()" [disabled]="disabledButton">Update</ion-button>
+    </ion-col>
+
+    <ion-row>
+      
+    </ion-row>
+  </div>
+
+</ion-content>

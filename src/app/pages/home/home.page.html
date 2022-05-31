@@ -1,0 +1,49 @@
+<ion-header class="ion-no-border">
+    <div class="lil-heads">
+        <ion-title>Home</ion-title>    
+    </div>
+</ion-header>
+
+<ion-content>
+
+    <div class="text">
+        Announcement
+    </div>
+
+    <!-- <div class="notif">
+        <div class="notif-text">
+            <p>Your request has been canceled.</p>
+        </div>
+    </div> -->
+
+    <div class="vmg">
+        <p>Vision and Mission</p>
+    </div>
+
+    <div class="vmg-text">
+        <p><strong>Mission</strong><br><br>
+            Our Mission is to ensure that we deliver the highest quality of vision care while offering the best value for money, maintaining a caring atmosphere with the help of our highly skilled and competent team of doctors and subordinates that is guided by our values of excellence and integrity. <br><br>
+            <strong>Vision</strong><br><br>
+            To be the leading and trusted vision care provider of everyjuan through embracing clinical innovations.
+        </p>
+    </div>
+
+    <div class="border"></div>
+
+    <div class="section-card">
+        <div class="card" *ngFor="let user of users">
+            <div class="card-image1">
+                <img src='{{user.image}}' height="160" width="280">
+            </div>
+            <div class="card-text1">
+                <div *ngIf="!user.hide">
+                    {{trimString(user.description,15)}}
+                </div>
+                <div *ngIf="user.hide">
+                    {{user.description}}
+                </div>
+                <a (click)="user.hide = !user.hide">Show <span [innerHtml]="user.hide ? 'less' : 'More'">  </span> </a>
+            </div>
+        </div>
+	</div>
+</ion-content>

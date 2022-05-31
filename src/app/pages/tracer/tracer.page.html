@@ -1,0 +1,62 @@
+<ion-header class="ion-no-border">
+  <div class="lil-heads">
+      <ion-title>Health Assessment</ion-title>    
+  </div>
+</ion-header>
+
+<ion-content>
+
+  <div class="ins">
+    <p>Check the box for yes.</p>
+  </div>
+
+  <div class="ion-padding">
+    <ion-card class="card">
+        <ion-item lines="none">
+          <p>1. For the past 7 days,  do you experince:<br><br> Sore throat <br> Body pain <br> Headache <br> Fever </p>
+          <ion-checkbox slot="end" (ionChange)="numbe1()"></ion-checkbox>
+        </ion-item>
+    </ion-card>
+
+    <ion-card class="card">
+      <ion-item lines="none">
+        <p>2. have you worked together or stayed in the same close environment of confirmed COVID-19 case?</p>
+        <ion-checkbox slot="end" (ionChange)="numbe2()"></ion-checkbox>
+      </ion-item>
+    </ion-card>
+
+    <ion-card class="card">
+      <ion-item lines="none">
+        <p>3. Have you had any contact with anyone with fever, cough, cold and sore throat in the past 2 weeks?</p>
+        <ion-checkbox slot="end" (ionChange)="numbe3()"></ion-checkbox>
+      </ion-item>
+    </ion-card>
+
+    <ion-card class="card">
+      <ion-item lines="none">
+        <p>4. Have you travelled outside of the Philippines in the last 14 days?</p>
+        <ion-checkbox slot="end" (ionChange)="numbe4()"></ion-checkbox>
+      </ion-item>
+    </ion-card>
+
+    <ion-card class="card">
+      <ion-item lines="none">
+        <p>5. Have you travelled to any area in NCR aside from your home?</p>
+        <ion-checkbox slot="end" (ionChange)="numbe5()"></ion-checkbox>
+      </ion-item>
+    </ion-card>
+
+    <ion-card class="card">
+      <ion-item lines="none">
+        <ion-label position="stacked">Temperature</ion-label>
+        <ion-input placeholder="Celcius" [(ngModel)]="temp"></ion-input>
+      </ion-item>
+    </ion-card>
+  </div>
+
+  <div class="btn">
+    <ion-button  color="primary" (click)="show()">
+      Submit
+    </ion-button>
+  </div>
+</ion-content>

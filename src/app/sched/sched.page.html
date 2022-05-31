@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title> Appointment Form </ion-title>
+    <ion-buttons  slot="end">
+      <ion-button (click)="CloseModal()">
+        <ion-icon color="secondary" slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="content">
+    <div class="note">
+      To set an appointment, kindly fill-out all the required fields:
+    </div>
+
+    <h2> Appointment Details: </h2>
+
+    
+      <div class="input">
+        <ion-item lines="none">
+          <ion-label position="stacked">Date of Appointment</ion-label>
+          <ion-input type="date"  [(ngModel)]="p_date"></ion-input>
+        </ion-item>
+
+        <ion-item lines="none">
+          <ion-select placeholder="Time" [(ngModel)]="p_time">
+   <ion-select-option value="8:00AM">8:00AM</ion-select-option>
+          <ion-select-option value="8:00AM">8:00AM</ion-select-option>
+          <ion-select-option value="8:30AM">8:30AM</ion-select-option>
+          <ion-select-option value="9:00AM">9:00AM</ion-select-option>
+          <ion-select-option value="9:30AM">9:30AM</ion-select-option>
+          <ion-select-option value="10:00AM">10:00AM</ion-select-option>
+          <ion-select-option value="10:30AM">10:30AM</ion-select-option>
+          <ion-select-option value="11:00AM">11:00AM</ion-select-option>
+          <ion-select-option value="11:30AM">11:30AM</ion-select-option>
+          <ion-select-option value="12:00PM">12:00PM</ion-select-option>
+          <ion-select-option value="12:30PM">12:30PM</ion-select-option>
+          <ion-select-option value="1:00PM">1:00PM</ion-select-option>
+          <ion-select-option value="1:30PM">1:30PM</ion-select-option>
+          <ion-select-option value="2:00PM">2:00PM</ion-select-option>
+          <ion-select-option value="2:30PM">2:30PM</ion-select-option>
+          <ion-select-option value="3:00PM">3:00PM</ion-select-option>
+          <ion-select-option value="3:30PM">3:30PM</ion-select-option>
+          <ion-select-option value="4:00PM">4:00PM</ion-select-option>
+          <ion-select-option value="4:30PM">4:30PM</ion-select-option>
+         </ion-select>
+        </ion-item>
+      </div>    
+    
+
+    <ion-button (click)="apply()" color="primary">
+      Submit
+    </ion-button>
+
+  </div>
+
+</ion-content>

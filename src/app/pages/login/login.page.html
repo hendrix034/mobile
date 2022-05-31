@@ -1,0 +1,30 @@
+<ion-header class="ion-no-border">
+  <div class="login-header">
+      <img class="logo-img" src="../../../assets/logo1.jpg">
+  </div>
+</ion-header>
+
+<ion-content  >
+  <div class="center">
+
+      <ion-item transparent lines="none">
+          <ion-icon name="person-circle-outline"></ion-icon>
+          <ion-input [(ngModel)]="email_address" placeholder="Username" type="text"></ion-input>
+      </ion-item>
+      <ion-item transparent lines="none">
+          <ion-icon name="key"></ion-icon>
+          <ion-input [(ngModel)]="password" placeholder="Password" type="password"></ion-input>
+      </ion-item>
+
+      <div linespace></div>
+      <ion-button class="ion-button-class" color="danger" size="large" fill="solid" 
+      (click)="tryLogin()">LOGIN</ion-button>
+      <ion-label class="ion-text-center"><a [routerLink]="['/register']">Don't have Account yet? Sign Up HERE</a>
+      </ion-label>
+
+
+
+  </div>
+
+
+</ion-content>

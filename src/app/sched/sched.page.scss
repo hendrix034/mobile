@@ -1,0 +1,58 @@
+ion-toolbar {
+    --background: #c62929;
+    --color: #000000;
+}
+
+ion-title {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    --color: #ffffff;
+}
+
+// .lil-heads{
+//     background: #C62929;
+//     padding: 15px;
+//     text-align: center;
+// }
+
+// ion-title {
+//     font-size: 25px;
+//     font-weight: 500;
+//     letter-spacing: 2px;
+// }
+
+.content {
+    overflow: auto;
+}
+
+.note {
+    font-size: 18px;
+    padding: 20px;
+    letter-spacing: 0.7px;
+}
+
+h2 {
+    margin: 0px;
+    padding: 20px;
+}
+
+.input {
+    margin-top: -40px;
+    padding: 40px 40px 25px 50px;
+    position: relative;
+    right: 30px;
+
+    ion-item {
+        --background: #e5e5e5;
+    }
+
+    ion-input {
+        font-size: 17px;
+    }
+}
+
+ion-button {
+    margin: 0 25px 25px;
+    float: right;
+}

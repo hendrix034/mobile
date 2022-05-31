@@ -1,0 +1,35 @@
+.lil-heads{
+    background: #C62929;
+    padding: 20px;
+    text-align: center;
+}
+
+.centre {
+    padding: 25px;
+    -moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+}
+
+ion-input {
+    font-size: 15px;
+    text-indent: 1px;
+    padding: 20px;
+    padding-left: 10px !important;
+    border-bottom: 2px solid #000;
+}
+
+ion-row {
+    height: 60px;
+    width: 340px;
+    font-size: 20px;
+    line-height: 0.7;
+    padding-left: 88px;
+    padding-top: 15px;
+}
+
+.item-checkbox {
+    font-size: 15px;
+    text-align: center;
+    padding-top: 20px;
+}

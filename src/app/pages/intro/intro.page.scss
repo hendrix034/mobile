@@ -1,0 +1,38 @@
+.lil-heads{
+    background: #C62929;
+    padding: 15px;
+    text-align: center;
+}
+
+ion-title {
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    --color: #ffffff;
+}
+
+.ion-align-items-center {
+    font-size: 21px;
+}
+
+.card {
+    box-shadow: none;
+    --background: #e5e5e5;
+    padding: 6px;
+    border-radius: 30px;
+
+    ion-item {
+        --min-height: 28px;
+        --background: #e5e5e5;
+    }
+}
+
+.cancel-btn {
+    float: right;
+}
+
+.btn {
+    position: relative;
+    margin-top: 15%;
+    left: 18%;
+}

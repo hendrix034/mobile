@@ -1,0 +1,48 @@
+.lil-heads{
+    background: #C62929;
+    padding: 15px;
+    text-align: center;
+}
+
+ion-title {
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    --color: #ffffff;
+}
+
+.ion-padding {
+    padding-top: 0;    
+}
+
+.card {
+    box-shadow: none;
+    
+    ion-item {
+    --background: #e5e5e5;
+    --border-radius: 20px;
+    }
+}
+
+.ins {
+    margin: 15px auto 0;
+    width: 335px;
+    padding: 2px;
+}
+
+.ins p {
+    margin: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.item-checkbox {
+    font-size: 15px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.btn {
+    float: right;
+    margin: 0 20px 20px;
+}
